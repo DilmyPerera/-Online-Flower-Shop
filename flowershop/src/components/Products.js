@@ -6,6 +6,19 @@ export default function Products(){
    
     const [cart ,setCart] = useState([]);
 
+    const addToCart = (flower) =>{
+        setCart((prevCart)=>{
+            const existing = prevCart.find((item)=>item.id === flower.id);
+            if(existing) {
+                return prevCart.map((item)=>
+                    item.id === flower.id
+                    ?{...item, qty: item.qty + flower.qty }
+                    : item
+                )
+            }
+            return [...prevCart,flower];
+        });
+    };
     
     return(
         <>
