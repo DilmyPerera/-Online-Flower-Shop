@@ -3,7 +3,12 @@ import '../assets/CSS/layout.css';
 export default function Product(){
     
     const [quantity, setQuantity] = useState(0);
-    
+
+    const handleAddtoCart = () =>{
+        if (quantity >0){
+            addtoCart({...flowers, qty: quantity });
+        }
+    }
     return(
         <div className="grid-item">
 
