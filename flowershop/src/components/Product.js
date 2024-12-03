@@ -1,19 +1,19 @@
 import { useState } from 'react';
 import '../assets/CSS/layout.css';
-export default function Product(){
+export default function Product({flower, addtoCart}){
     
     const [quantity, setQuantity] = useState(0);
 
     const handleAddtoCart = () =>{
         if (quantity >0){
-            addtoCart({...flowers, qty: quantity });
+            addtoCart({...flower, qty: quantity });
         }
     }
     return(
         <div className="grid-item">
 
             <div class="card">
-                <img src={flowers.img} alt= {flower.name}/>
+                <img src={flower.img} alt= {flower.name}/>
                 <div class="card-body">
 
                     <h5 class="card-title">Price: ${flower.price}</h5>
