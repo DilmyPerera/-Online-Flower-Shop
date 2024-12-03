@@ -17,9 +17,10 @@ export default function Product(){
                 <div class="card-body">
 
                     <h5 class="card-title">Price: ${flower.price}</h5>
+
                     <div class="quantity-container">
                         <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" name="quantity" />
+                        <input type="number" id="quantity" name="quantity" onChange={(e)=> setQuantity(Number(e.target.value))} />
                     </div>
                     <button class="card-button">Add to Cart</button>
                 </div>
