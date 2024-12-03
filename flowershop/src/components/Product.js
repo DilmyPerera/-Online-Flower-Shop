@@ -22,7 +22,7 @@ export default function Product(){
                         <label for="quantity">Quantity:</label>
                         <input type="number" id="quantity" name="quantity" onChange={(e)=> setQuantity(Number(e.target.value))} />
                     </div>
-                    <button class="card-button">Add to Cart</button>
+                    <button class="card-button" onClick={handleAddtoCart}>Add to Cart</button>
                 </div>
             </div>
         </div>
