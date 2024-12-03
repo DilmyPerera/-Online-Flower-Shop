@@ -1,6 +1,5 @@
-
 import '../assets/CSS/layout.css';
-
+import {flowers} from './FlowerDB'
 
 export default function Products(){
    
