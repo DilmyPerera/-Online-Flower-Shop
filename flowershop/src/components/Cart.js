@@ -15,7 +15,13 @@ export default function Cart() {
 
                 </thead>
                 {
-                    
+                    cart.map((item) => (
+                        <tr key={item.id}>
+                            <td>{item.name}</td>
+                            <td>{item.qty}</td>
+                            <td>${item.price * item.qty}</td>
+                        </tr>
+                    ))
                 }
                 <tr>
                     <td >Grand Total : </td>
