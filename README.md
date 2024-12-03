@@ -82,7 +82,7 @@ The application will run on `http://localhost:3000`.
 
 ## Output
 
-![Alt Text](image.png)
+![Alt Text](output.png)
 
 ---
 
