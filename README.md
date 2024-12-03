@@ -70,7 +70,7 @@ Check the selected items, their quantities, individual prices, and the total cos
 
 ---
 ## Output
-![Alt Text](path/to/image)
+![Alt Text](image.png)
 
 ---
 
