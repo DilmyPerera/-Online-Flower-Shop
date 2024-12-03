@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import '../assets/CSS/layout.css';
-export default function Product({flower, addtoCart}){
+export default function Product({flower, addToCart}){
     
     const [quantity, setQuantity] = useState(0);
 
     const handleAddtoCart = () =>{
         if (quantity >0){
-            addtoCart({...flower, qty: quantity });
+            addToCart({...flower, qty: quantity });
         }
     }
     return(
