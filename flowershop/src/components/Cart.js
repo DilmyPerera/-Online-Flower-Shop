@@ -1,5 +1,8 @@
 export default function Cart() {
     
+    const grandTotal = cart.reduce((sum,item)=>
+            sum + item.price * item.qty, 0 );
+        
     return (
         <div className="table-container">
             <h4 className="card-title">Cart</h4>
