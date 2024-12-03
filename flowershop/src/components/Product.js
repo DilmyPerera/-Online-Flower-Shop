@@ -13,9 +13,10 @@ export default function Product(){
         <div className="grid-item">
 
             <div class="card">
-                <img  />
+                <img src={flowers.img} alt= {flower.name}/>
                 <div class="card-body">
-                    <h5 class="card-title">Price:</h5>
+
+                    <h5 class="card-title">Price: ${flower.price}</h5>
                     <div class="quantity-container">
                         <label for="quantity">Quantity:</label>
                         <input type="number" id="quantity" name="quantity" />
